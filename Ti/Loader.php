@@ -12,6 +12,6 @@ class Loader
 {
     static function autoload($class)
     {
-        $target = BASEDIR.'/'.str_replace('\\','/',$class);
+        require  BASEDIR.'/'.str_replace('\\','/',$class);
     }
 }
