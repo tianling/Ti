@@ -11,6 +11,6 @@ class Object
 {
     static function test()
     {
-
+        echo "111";
     }
 }
