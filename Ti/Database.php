@@ -5,3 +5,22 @@
  * Date: 2017/5/12
  * Time: 18:55
  */
+namespace Ti;
+
+class Database
+{
+    public function where($where)
+    {
+        return $this;
+    }
+
+    public function order($order)
+    {
+        return $this;
+    }
+
+    public function limit($limit)
+    {
+        return $this;
+    }
+}
