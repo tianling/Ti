@@ -22,10 +22,12 @@ spl_autoload_register('\\Ti\\Loader::autoload');
 //    echo $he."\n";
 //}
 
-$db = new \Ti\Database();
+$db = \Ti\Factory::createDatabase();
 //$db->where("id = 1");
 //$db->where("name = 2");
 //$db->order("id desc");
 //$db->limit(10);
 
-$db->where("id = 1")->where("name = 2")->order("id desc")->limit(10);
+//$db->where("id = 1")->where("name = 2")->order("id desc")->limit(10);
+
+$obj = new \Ti\Object();
