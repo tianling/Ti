@@ -31,3 +31,9 @@ $db = \Ti\Factory::createDatabase();
 //$db->where("id = 1")->where("name = 2")->order("id desc")->limit(10);
 
 $obj = new \Ti\Object();
+
+$conn = new \Ti\Database\MySql();
+
+$index = new \App\Controller\Home\Index();
+$index->index();
+
